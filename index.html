@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Sudani Thanksgiving ’26</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3a0818">
+<meta name="description" content="Join us Thursday, Nov 26 for food, family games and a photo station. RSVP and sign up to bring a dish.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A Sudani Thanksgiving ’26">
+<meta property="og:title" content="A Sudani Thanksgiving ’26">
+<meta property="og:description" content="Join us Thursday, Nov 26 for food, family games and a photo station. RSVP and sign up to bring a dish.">
+<meta property="og:url" content="https://saheeabdel.github.io/thanksgiving/">
+<meta property="og:image" content="https://saheeabdel.github.io/thanksgiving/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Sudani Thanksgiving ’26, Thursday Nov 26, with vintage Sudanese stamps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Sudani Thanksgiving ’26">
+<meta name="twitter:description" content="Join us Thursday, Nov 26 for food, family games and a photo station. RSVP and sign up to bring a dish.">
+<meta name="twitter:image" content="https://saheeabdel.github.io/thanksgiving/img/og.png">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bevan&family=Jost:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;600&family=Pinyon+Script&display=swap">
+<style>
+/* Layout concept: a stamp from home laid on a wine-dark poster. One deep wine ground, paper cutouts
+   that overlap and tilt, script titles with Arabic beside them, one chartreuse action per screen.
+   Tokens are the Sudanese Thanksgiving design system's, unchanged. Single theme on purpose. */
+:root {
+  color-scheme: dark;
+  --bg: #3a0716;
+  --bg-raised: #4d0f25;
+  --ink: #f6ebdd;
+  --ink-muted: #d9b8bc;
+  --line: #c98fa5;
+  --line-soft: #6a2a40;
+  --headline: #ebafd0;
+  --action: #b4bf4c;
+  --on-fill: #2a040e;
+  --warm: #e08a3c;
+  --error: #ff9fa8;
+  --focus: #b4bf4c;
+  --hibiscus: #d2304f;
+  --paper: #f3e9d6;
+  --shadow-lift: 0 2px 0 #2a040e66, 0 12px 28px #2a040e66;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 72px;
+  --radius-scale: 8px; --radius-card: 16px; --radius-pill: 9999px;
+  --font-script: "Pinyon Script", "Great Vibes", cursive;
+  --font-stamp: "Bevan", Rockwell, "Roboto Slab", serif;
+  --font-arabic: "Aref Ruqaa", "Noto Naskh Arabic", serif;
+  --font-arabic-text: "Noto Naskh Arabic", Amiri, serif;
+  --font-sans: "Jost", Futura, "Century Gothic", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/26px var(--font-sans); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, dl, dd { margin: 0; }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg-raised); }
+
+/* type scale */
+.display-xl { font: 400 84px/82px var(--font-script); color: var(--headline); }
+.display-lg { font: 400 clamp(46px, 9vw, 64px)/1.08 var(--font-script); color: var(--headline); text-wrap: balance; }
+.display-md { font: 400 40px/44px var(--font-script); color: var(--headline); text-wrap: balance; }
+.stamp-xl { font: 400 56px/60px var(--font-stamp); }
+.stamp-md { font: 400 28px/32px var(--font-stamp); letter-spacing: .02em; }
+.stamp-dish { font: 400 20px/26px var(--font-stamp); }
+.ar-hero { font: 400 40px/60px var(--font-arabic); color: var(--warm); direction: rtl; text-align: left; }
+.ar-title { font: 400 32px/48px var(--font-arabic); color: var(--warm); direction: rtl; text-align: left; }
+.ar-body { font: 400 20px/36px var(--font-arabic-text); color: var(--warm); direction: rtl; text-align: left; }
+.body-sm { font: 400 14px/21px var(--font-sans); }
+.ui { font: 300 16px/20px var(--font-sans); letter-spacing: .1em; }
+.label { font: 500 12px/16px var(--font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+.whisper { font: 300 13px/20px var(--font-sans); letter-spacing: .08em; color: var(--ink-muted); }
+.muted { color: var(--ink-muted); }
+.warm { color: var(--warm); }
+.ok { color: var(--action); }
+.err { color: var(--error); }
+
+/* page frame */
+.page { overflow-x: clip; }
+.gut { max-width: 960px; margin-left: auto; margin-right: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 900px) { .gut { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
+
+/* navigation */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg-raised); }
+.nav-in { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding-top: var(--space-3); padding-bottom: var(--space-3); }
+.tabs { display: flex; gap: var(--space-2); }
+.tab { min-height: 44px; padding: 0 18px; border: 1.5px solid var(--line); border-radius: var(--radius-pill); background: transparent; font: 300 16px/20px var(--font-sans); letter-spacing: .1em; cursor: pointer; transition: transform .12s; }
+.tab:active { transform: scale(.96); }
+.tab[aria-selected="true"] { background: var(--paper); border-color: var(--paper); color: var(--bg); }
+.tab .s { display: none; }
+@media (max-width: 620px) {
+  .nav-in .whisper { display: none; }
+  .tabs { width: 100%; }
+  .tab { flex: 1 1 0; min-width: 0; padding: 0 6px; }
+  .tab .l { display: none; }
+  .tab .s { display: inline; }
+}
+
+/* buttons and links */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 30px; border: 0; border-radius: var(--radius-pill); background: var(--action); color: var(--on-fill); font: 300 16px/20px var(--font-sans); letter-spacing: .1em; cursor: pointer; transition: transform .12s; }
+.btn:active:not(:disabled) { transform: scale(.97); }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn-2 { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border: 1.5px solid var(--line); border-radius: var(--radius-pill); background: transparent; color: var(--ink); font: 300 16px/20px var(--font-sans); letter-spacing: .1em; text-decoration: none; cursor: pointer; transition: transform .12s, border-color .2s; }
+.btn-2:hover:not(:disabled) { border-color: var(--ink); }
+.btn-2:active:not(:disabled) { transform: scale(.97); }
+.btn-2:disabled { opacity: .5; cursor: not-allowed; }
+.linkbtn { min-height: 44px; padding: 0 var(--space-2); border: 0; background: none; color: var(--ink); font: 300 16px/20px var(--font-sans); letter-spacing: .1em; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; cursor: pointer; }
+.linkbtn.quiet { color: var(--ink-muted); }
+
+/* hero */
+/* clips the stamps at the screen's sides only; the hibiscus is allowed to hang over the bottom edge into the next section */
+.hero-wrap { position: relative; isolation: isolate; overflow-x: clip; background: var(--bg); }
+.paint { position: absolute; inset: 0; z-index: 0; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); opacity: .45; mix-blend-mode: soft-light; pointer-events: none; }
+.paint i { display: block; background-size: cover; background-position: center; }
+.hero { position: relative; z-index: 3; max-width: 960px; min-height: 720px; margin: 0 auto; }
+.copy { position: relative; z-index: 6; max-width: 560px; padding: var(--space-8) var(--space-7) var(--space-7) max(32px, env(safe-area-inset-left, 0px)); }
+.copy h1 { margin-top: var(--space-2); }
+.copy .ar-hero { margin: var(--space-3) 0 var(--space-4); }
+.facts { display: grid; gap: var(--space-4); margin: var(--space-5) 0; }
+.facts dt { font: 500 12px/16px var(--font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+.facts dd { margin-top: var(--space-1); }
+.deadline { margin-top: var(--space-4); }
+/* the collage hangs off the screen's right edge; the lead stamp is slapped on the corner and cropped by it */
+.collage { position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; width: 520px; pointer-events: none; }
+.lay { position: absolute; height: auto; transform: rotate(var(--r, 0deg)); }
+.l-st { width: 400px; right: -44px; top: 90px; --r: 4deg; z-index: 2; }
+.l-sw { width: 250px; right: 290px; top: 230px; --r: -8deg; z-index: 1; }
+.l-hb { width: 270px; right: 24px; top: 500px; --r: 4deg; z-index: 3; }
+.l-ch { width: 130px; right: 290px; top: 470px; --r: -6deg; z-index: 4; }
+/* second, smaller stamp slapped on the banner's top-right corner, tilted the other way */
+.corner { position: absolute; z-index: 2; top: -40px; right: -28px; width: 210px; height: auto; transform: rotate(-8deg); pointer-events: none; }
+@keyframes settle { from { transform: translateY(-26px) rotate(calc(var(--r) - 5deg)); opacity: 0; } to { transform: rotate(var(--r)); opacity: 1; } }
+@media (prefers-reduced-motion: no-preference) { .l-st { animation: settle .4s cubic-bezier(.2, .9, .3, 1.1) both; } }
+@media (max-width: 900px) {
+  .hero { min-height: 0; }
+  .copy { max-width: 440px; padding: var(--space-6) 20px var(--space-3) max(20px, env(safe-area-inset-left, 0px)); }
+  .display-xl { font-size: 56px; line-height: 56px; }
+  .collage { position: relative; top: auto; right: auto; bottom: auto; width: 100%; height: 450px; margin-top: var(--space-2); }
+  .corner { width: 120px; top: -14px; right: -20px; }
+  .l-st { width: 260px; right: -34px; top: 0; }
+  .l-sw { width: 150px; right: 190px; top: 180px; }
+  .l-hb { width: 190px; right: 6px; top: 235px; }
+  .l-ch { width: 100px; right: 150px; top: 300px; }
+}
+
+/* details */
+.details { padding-top: var(--space-8); }
+.det { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-7); align-items: center; }
+.det .facts { margin: 0 0 var(--space-4); }
+.det .stamp-md { overflow-wrap: anywhere; }
+.det .arrive { max-width: 40ch; }
+.camel { display: block; width: 190px; height: auto; transform: rotate(3deg); }
+@media (max-width: 620px) { .det { grid-template-columns: 1fr; gap: var(--space-5); } .camel { width: 150px; justify-self: end; } }
+
+/* rsvp */
+.rsvp { padding-top: var(--space-8); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: var(--space-7); align-items: start; scroll-margin-top: 72px; }
+@media (max-width: 900px) { .rsvp { grid-template-columns: minmax(0, 1fr); gap: var(--space-6); } }
+.form { display: flex; flex-direction: column; gap: var(--space-5); min-width: 0; }
+.form .body-sm { margin-top: var(--space-2); }
+.field { display: flex; flex-direction: column; gap: var(--space-2); }
+.input { width: 100%; min-height: 48px; padding: 12px 14px; background: var(--bg-raised); color: var(--ink); border: 1.5px solid var(--line); border-radius: var(--radius-scale); font: 400 17px/24px var(--font-sans); }
+.input::placeholder { color: var(--ink-muted); opacity: .8; }
+.input:disabled { opacity: .55; cursor: not-allowed; }
+textarea.input { min-height: 76px; resize: vertical; }
+.row { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.opt { position: relative; }
+.opt input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 18px; border: 1.5px solid var(--line); border-radius: var(--radius-pill); background: transparent; color: var(--ink); font: 300 16px/20px var(--font-sans); letter-spacing: .08em; }
+.opt input:checked + .chip { background: var(--action); border-color: var(--action); color: var(--on-fill); }
+.opt input:checked + .chip::before { content: "\2713"; }
+.opt input:focus-visible + .chip { outline: 3px solid var(--focus); outline-offset: 3px; }
+.opt input:disabled + .chip { opacity: .55; }
+@media (prefers-reduced-motion: no-preference) { .opt .chip { transition: transform .12s; } .opt:active .chip { transform: scale(.96); } }
+.step { display: inline-flex; align-items: center; gap: var(--space-3); }
+.step button { width: 44px; height: 44px; border-radius: var(--radius-pill); border: 1.5px solid var(--line); background: transparent; font: 500 22px/1 var(--font-sans); cursor: pointer; }
+.step button:disabled { opacity: .4; cursor: not-allowed; }
+.step output { min-width: 2ch; text-align: center; font: 400 28px/32px var(--font-stamp); color: var(--warm); }
+.msg { min-height: 26px; margin-top: var(--space-3); font-size: 15px; line-height: 22px; }
+.after { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-1); }
+
+/* ticket */
+.ticket { position: relative; margin-top: var(--space-4); padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6); color: var(--bg); transform: rotate(2deg); filter: drop-shadow(0 2px 1px #2a040e55) drop-shadow(0 12px 16px #2a040e66); }
+.ticket::before, .ticket::after { content: ""; position: absolute; z-index: -1; }
+.ticket::before { inset: -7px; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32  0 0 0 0 .2  0 0 0 0 .12  0 0 0 .7 -.12'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"), var(--paper); background-blend-mode: multiply; filter: url(#rough1) brightness(1.04); }
+.ticket::after { inset: 0; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32  0 0 0 0 .2  0 0 0 0 .12  0 0 0 .7 -.12'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"), var(--paper); background-blend-mode: multiply; box-shadow: inset 0 0 14px #7a5a3a66, inset 2px 3px 6px #ffffff55; filter: url(#rough2) brightness(.97); }
+.ticket .strip { display: block; width: 150px; height: auto; margin: -10px 0 var(--space-2) -14px; transform: rotate(-3deg); }
+.ticket .t-ar { font: 400 32px/48px var(--font-arabic); color: var(--bg); direction: rtl; text-align: left; }
+.ticket .t-title { font: 400 20px/26px var(--font-stamp); color: var(--bg); }
+.ticket dl { display: grid; gap: var(--space-3); margin-top: var(--space-4); padding-right: var(--space-5); }
+.ticket dt { font: 500 12px/16px var(--font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--bg); opacity: .72; }
+.ticket dd { margin-top: 2px; font: 400 18px/24px var(--font-sans); overflow-wrap: anywhere; }
+.ticket .no { position: absolute; top: var(--space-5); right: var(--space-5); font: 400 22px/26px var(--font-stamp); color: var(--bg); }
+.mark { position: absolute; right: var(--space-4); bottom: var(--space-4); width: 104px; height: 104px; border: 3px double var(--hibiscus); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--bg); font: 600 12px/16px var(--font-sans); letter-spacing: .14em; opacity: 0; transform: rotate(-14deg) scale(1.6); }
+.sent .mark { opacity: .92; transform: rotate(-14deg) scale(1); }
+@media (prefers-reduced-motion: no-preference) { .mark { transition: opacity .2s, transform .4s cubic-bezier(.2, 1.4, .4, 1); } }
+@media (max-width: 900px) { .ticket { margin: var(--space-2) var(--space-3) 0; } }
+
+/* playlist */
+.playlist { padding-top: var(--space-8); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--space-7); align-items: center; }
+.playlist .swirl { display: block; width: 230px; height: auto; transform: rotate(-5deg); }
+.pl-copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+.pl-copy .display-lg { margin-top: calc(var(--space-2) * -1); }
+.pl-copy .lead { max-width: 46ch; }
+@media (max-width: 700px) { .playlist { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); } .playlist .swirl { width: 170px; } }
+
+.foot { padding-top: var(--space-8); padding-bottom: var(--space-7); text-align: center; }
+
+/* table */
+.pad { padding-top: var(--space-7); padding-bottom: var(--space-8); }
+.tb-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-6); align-items: center; }
+.tb-head .lead { margin-top: var(--space-3); max-width: 46ch; }
+.tb-head .camel { width: 150px; }
+@media (max-width: 620px) { .tb-head { grid-template-columns: minmax(0, 1fr) 96px; gap: var(--space-4); align-items: start; } .tb-head .camel { width: 96px; } }
+.stack { display: flex; flex-direction: column; gap: var(--space-5); }
+.note { display: grid; gap: var(--space-2); padding: var(--space-4); background: var(--bg-raised); border-radius: var(--radius-scale); }
+.note p { overflow-wrap: anywhere; }
+.sec-head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); }
+.pill { display: inline-flex; align-items: center; min-height: 32px; padding: 0 14px; border: 1.5px solid var(--line); border-radius: var(--radius-pill); font: 300 14px/20px var(--font-sans); letter-spacing: .08em; }
+.pill.done { border-color: var(--action); color: var(--action); }
+.staples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-5); }
+@media (max-width: 760px) { .staples { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); } .staple .btn-2 { padding: 0 14px; white-space: nowrap; } }
+.staple { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0; padding: var(--space-4); border: 1.5px solid var(--line); border-radius: var(--radius-card); background: var(--bg-raised); }
+.staple.claimed { background: transparent; border-color: var(--line-soft); }
+.st-title { font: 400 22px/26px var(--font-stamp); overflow-wrap: anywhere; }
+@media (min-width: 761px) { .st-title { font-size: 28px; line-height: 32px; } }
+.staple.claimed .st-title { color: var(--ink-muted); text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.st-foot { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); margin-top: auto; padding-top: var(--space-2); }
+.staple .ok { margin-top: auto; padding-top: var(--space-2); overflow-wrap: anywhere; }
+.menu { display: flex; flex-direction: column; gap: var(--space-8); margin-top: var(--space-8); }
+.course-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-4); }
+.course-head > div { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.course-head .tile { flex: none; width: 96px; height: auto; transform: rotate(var(--r, 4deg)); }
+.dishes { margin-top: var(--space-4); }
+.dish { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-3); align-items: center; padding: var(--space-4) 0; border-top: 1px solid var(--line-soft); }
+.dish .stamp-dish { overflow-wrap: anywhere; }
+.dish .by { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-top: var(--space-1); }
+.tag { display: inline-flex; align-items: center; min-height: 24px; padding: 0 10px; border: 1.5px solid var(--line-soft); border-radius: var(--radius-pill); font: 300 12px/16px var(--font-sans); letter-spacing: .08em; color: var(--ink-muted); }
+.empty { padding: var(--space-4) 0; border-top: 1px solid var(--line-soft); }
+.add { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+.add .input { flex: 1 1 220px; min-width: 0; }
+
+/* guest list */
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-7); }
+@media (max-width: 700px) { .kpis { grid-template-columns: minmax(0, 1fr); } }
+.kpi { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-5); background: var(--bg-raised); border-radius: var(--radius-card); box-shadow: var(--shadow-lift); }
+.kpi .stamp-xl { color: var(--warm); font-variant-numeric: lining-nums; }
+.ledger { margin-top: var(--space-5); padding: var(--space-2) var(--space-5); background: var(--bg-raised); border-radius: var(--radius-card); }
+.l-head { display: none; }
+.l-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); padding: var(--space-5) 0; border-top: 1px solid var(--line-soft); }
+.l-row:first-of-type { border-top: 0; }
+.l-row > div { min-width: 0; overflow-wrap: anywhere; }
+.l-row .cell { display: block; margin-bottom: 2px; }
+.l-row.regrets .stamp-dish { color: var(--ink-muted); }
+.num-warm { font: 400 20px/26px var(--font-stamp); color: var(--warm); }
+@media (min-width: 760px) {
+  .l-head, .l-row { display: grid; grid-template-columns: 1.2fr .8fr 2fr 1.6fr; column-gap: var(--space-5); align-items: baseline; }
+  .l-head { padding: var(--space-4) 0 var(--space-2); }
+  .l-row .cell { display: none; }
+}
+.l-empty { padding: var(--space-5) 0; display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough1" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05 0.04" numOctaves="3" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="rough2" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.06 0.05" numOctaves="3" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+
+<div id="root"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="config.js"></script>
+<script>
+(function () {
+  var useState = React.useState, useEffect = React.useEffect, useRef = React.useRef, useMemo = React.useMemo;
+  var html = htm.bind(React.createElement);
+
+  var IMG = { dhow: 'img/dhow.png', camel: 'img/camel.png', hibiscus: 'img/hibiscus.png', cherries: 'img/cherries.png', artichoke: 'img/artichoke.png', swirl: 'img/swirl.png', impasto: 'img/impasto.jpg' };
+  var PLAYLIST_URL = 'https://open.spotify.com/playlist/6u35mKV6zG03mOtarIeGDC';
+  /* Host details. The RSVP deadline is not confirmed yet; set rsvpBy when it is. */
+  var EVENT = { date: 'Thu, Nov 26', time: '3:00 pm', food: '4:00 pm', placeLines: ['13615 Wendover Rd', 'Silver Spring, MD 20904'], rsvpBy: '' };
+
+  /* ---------- menu data ---------- */
+  var CATS = [
+    { id: 'main', title: 'The Main Event', note: 'Centerpieces, carved things, and the gravy boat.', tile: 'hibiscus', r: 5 },
+    { id: 'sides', title: 'Classic Sides', note: 'Potatoes, breads, and everything that soaks up gravy.', tile: 'artichoke', r: -4 },
+    { id: 'greens', title: 'Harvest Greens', note: 'Vegetables and salads that bring some brightness.', tile: 'hibiscus', r: 6 },
+    { id: 'sweet', title: 'Sweet Endings', note: 'Pies, tarts, and anything with cinnamon.', tile: 'cherries', r: -3 }
+  ];
+  var STAPLES = [
+    { id: 'mac', title: 'Mac and Cheese', kicker: 'Baked and bubbling', cat: 'sides', fill: 'Mac and Cheese', re: /\bmac+\b|macaroni/i },
+    { id: 'sweetpotato', title: 'Sweet Potatoes', kicker: 'Casserole, mashed or baked', cat: 'sides', fill: 'Sweet Potatoes', re: /sweet potato|\byams?\b/i },
+    { id: 'turkey', title: 'Turkey', kicker: 'The centerpiece', cat: 'main', fill: 'Turkey', re: /turkey|the bird/i },
+    { id: 'stuffing', title: 'Stuffing', kicker: 'Or dressing', cat: 'sides', fill: 'Stuffing', re: /stuffing|dressing/i },
+    { id: 'krispy', title: 'Krispy Kreme', kicker: 'Glazed, by the dozen', cat: 'sweet', fill: 'Krispy Kreme', re: /krispy|kreme|doughnut|donut/i },
+    { id: 'kunafa', title: 'Kunafa', kicker: 'Pastry soaked in syrup', cat: 'sweet', fill: 'Kunafa', re: /kunafa|kunafeh|knafeh|kanafeh|konafa|kunefe/i }
+  ];
+  var STAPLE_BY_ID = {}; STAPLES.forEach(function (s) { STAPLE_BY_ID[s.id] = s; });
+
+  var SEED = { rsvps: [], dishes: [] };
+
+  var STOP = new Set(['with', 'and', 'the', 'our', 'homemade', 'roasted', 'classic', 'fresh', 'baked', 'style', 'from', 'sauce', 'salad', 'cake', 'bread', 'butter', 'sweet', 'grandma', 'family', 'recipe', 'easy', 'best']);
+  function sig(s) {
+    return (s || '').toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter(function (w) { return w.length >= 4 && !STOP.has(w); }).map(function (w) { return w.replace(/(es|s)$/, ''); });
+  }
+  function findSimilar(name, staple, dishes) {
+    if (staple) { var c = dishes.find(function (d) { return d.staple === staple.id; }); if (c) return { dish: c, staple: staple }; }
+    var mine = sig(name); if (!mine.length) return null;
+    var hit = dishes.find(function (d) { return sig(d.name).some(function (w) { return mine.indexOf(w) > -1; }); });
+    return hit ? { dish: hit, staple: null } : null;
+  }
+  function numbered(rsvps) {
+    var out = {};
+    rsvps.slice().sort(function (a, b) { return (a.updatedAt || 0) - (b.updatedAt || 0); }).forEach(function (r, i) { out[r.id] = r.no || (i + 1); });
+    return out;
+  }
+  function pad(n) { n = String(n); while (n.length < 3) n = '0' + n; return n; }
+  function daysToGo() {
+    var now = new Date(); var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((new Date(2026, 10, 26) - today) / 864e5);
+  }
+  function reduced() { return !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches); }
+
+  /* ---------- store: Supabase over plain fetch, refreshed every few seconds ---------- */
+  var CFG = window.RSVP_CONFIG || {};
+  var CONNECTED = !!(CFG.supabaseUrl && CFG.supabaseKey) && !/YOUR_|your-project/i.test(CFG.supabaseUrl + CFG.supabaseKey);
+  var BASE = String(CFG.supabaseUrl || '').trim().replace(/\/+$/, '').replace(/\/rest\/v1$/i, '').replace(/\/+$/, '');
+  var WHY = !window.RSVP_CONFIG ? 'config.js did not load' : (CONNECTED ? '' : 'config.js still has the placeholder text');
+  if (!CONNECTED) { try { console.warn('RSVP site not connected: ' + WHY); } catch (e) {} }
+  var mem = {};
+  function lsGet(k) { try { var v = localStorage.getItem(k); if (v) return v; } catch (e) {} return mem[k] || null; }
+  function lsSet(k, v) { mem[k] = v; try { localStorage.setItem(k, v); } catch (e) {} }
+  function rand() {
+    try { var a = new Uint8Array(16); crypto.getRandomValues(a); return Array.prototype.map.call(a, function (b) { return ('0' + b.toString(16)).slice(-2); }).join(''); }
+    catch (e) { return (String(Math.random()).slice(2) + String(Date.now()) + '0000000000000000').slice(0, 32); }
+  }
+  /* This browser's identity: a public id (shown as the owner of a dish) and a private code that proves it is really them. */
+  var ME = (function () {
+    var id = lsGet('tg_id'), tok = lsGet('tg_token');
+    if (!id) { id = 'g' + rand(); lsSet('tg_id', id); }
+    if (!tok) { tok = rand(); lsSet('tg_token', tok); }
+    return { id: id, token: tok };
+  })();
+
+  function sb(path, body) {
+    var h = { apikey: CFG.supabaseKey, 'Content-Type': 'application/json' };
+    if (/^eyJ/.test(CFG.supabaseKey)) h.Authorization = 'Bearer ' + CFG.supabaseKey;
+    return fetch(BASE + '/rest/v1/' + path, {
+      method: body ? 'POST' : 'GET', headers: h, body: body ? JSON.stringify(body) : undefined, cache: 'no-store'
+    }).then(function (r) {
+      return r.text().then(function (t) {
+        var j = null; try { j = t ? JSON.parse(t) : null; } catch (e) {}
+        if (!r.ok) { try { console.error('Supabase request failed', path, r.status, j); } catch (e) {} var err = new Error((j && j.message) || ('HTTP ' + r.status)); err.status = r.status; throw err; }
+        return j;
+      });
+    });
+  }
+  function ts(v) { var t = v ? Date.parse(v) : 0; return isNaN(t) ? 0 : t; }
+  function loadAll() {
+    return Promise.all([
+      sb('rsvps?select=id,name,attending,extra,notes,no,updated_at&order=no.asc'),
+      sb('dishes?select=id,name,category,by_name,by_id,staple,created_at&order=created_at.asc')
+    ]).then(function (r) {
+      return {
+        rsvps: (r[0] || []).map(function (x) { return { id: x.id, name: x.name, attending: x.attending, extra: x.extra, notes: x.notes, no: x.no, updatedAt: ts(x.updated_at) }; }),
+        dishes: (r[1] || []).map(function (x) { return { id: x.id, name: x.name, category: x.category, by: x.by_name, byId: x.by_id, staple: x.staple, createdAt: ts(x.created_at) }; })
+      };
+    });
+  }
+
+  function useStore() {
+    var st = useState({ mode: CONNECTED ? 'loading' : 'local', rsvps: SEED.rsvps.slice(), dishes: SEED.dishes.slice(), myId: CONNECTED ? ME.id : 'me', canWrite: true, admin: false, stale: false, synced: false });
+    var s = st[0], setS = st[1];
+    var tick = useRef(null), fails = useRef(0);
+    useEffect(function () {
+      if (!CONNECTED) return;
+      var dead = false;
+      function run() {
+        if (dead) return;
+        loadAll().then(function (d) {
+          if (dead) return; fails.current = 0;
+          setS(function (x) { return Object.assign({}, x, { mode: 'live', rsvps: d.rsvps, dishes: d.dishes, synced: true, stale: false }); });
+        }, function () {
+          if (dead) return; fails.current += 1;
+          setS(function (x) { return Object.assign({}, x, { mode: x.synced ? x.mode : 'live', stale: fails.current >= 2 }); });
+        });
+      }
+      tick.current = run; run();
+      var iv = setInterval(function () { if (!document.hidden) run(); }, 5000);
+      function vis() { if (!document.hidden) run(); }
+      document.addEventListener('visibilitychange', vis);
+      return function () { dead = true; clearInterval(iv); document.removeEventListener('visibilitychange', vis); };
+    }, []);
+
+    var api = {
+      saveRsvp: async function (v) {
+        var rec = { name: v.name.trim(), attending: v.attending, extra: v.attending ? v.extra : 0, notes: v.notes.trim(), updatedAt: Date.now() };
+        if (!CONNECTED) throw new Error('not connected');
+        var no2 = await sb('rpc/submit_rsvp', { p_id: ME.id, p_token: ME.token, p_name: rec.name, p_attending: rec.attending, p_extra: rec.extra, p_notes: rec.notes, p_phone: v.phone || '' });
+        setS(function (x) { return Object.assign({}, x, { rsvps: x.rsvps.filter(function (r) { return r.id !== ME.id; }).concat([Object.assign({ id: ME.id, no: no2 }, rec)]) }); });
+        if (tick.current) tick.current();
+      },
+      addDish: async function (v) {
+        var rec = { name: v.name, category: v.category, by: v.by, byId: s.myId, staple: v.staple || null, createdAt: Date.now() };
+        if (!CONNECTED) throw new Error('not connected');
+        var id = await sb('rpc/add_dish', { p_by_id: ME.id, p_token: ME.token, p_name: v.name, p_category: v.category, p_by_name: v.by, p_staple: v.staple || null });
+        setS(function (x) { return Object.assign({}, x, { dishes: x.dishes.concat([Object.assign({ id: id }, rec)]) }); });
+        if (tick.current) tick.current();
+      },
+      removeDish: async function (id) {
+        if (!CONNECTED) throw new Error('not connected');
+        await sb('rpc/remove_dish', { p_dish: id, p_token: ME.token });
+        setS(function (x) { return Object.assign({}, x, { dishes: x.dishes.filter(function (d) { return d.id !== id; }) }); });
+        if (tick.current) tick.current();
+      }
+    };
+    return Object.assign({}, s, api);
+  }
+
+  /* ---------- shared pieces ---------- */
+  function Note(p) {
+    return html`<div className="note" role="status"><span className="label warm">${p.label || 'Note'}</span>${p.children}</div>`;
+  }
+  function StoreNotes(p) {
+    var store = p.store;
+    return html`<div className="stack" style=${{ gap: '12px' }}>
+      ${store.mode === 'local' && html`<${Note}><p className="body-sm">This page is not connected to its RSVP sheet yet, so replies cannot be saved. Host: ${WHY}.</p><//>`}
+      ${store.stale && html`<${Note}><p className="body-sm">We are having trouble reaching the sign-up sheet, so what you see may be out of date. Please try again in a moment.</p><//>`}
+    </div>`;
+  }
+
+  /* ---------- 1. Welcome & RSVP ---------- */
+  function Hero(p) {
+    var left = daysToGo();
+    var tiles = [0, 1, 2, 3, 4, 5].map(function (i) {
+      var c = i % 3, r = Math.floor(i / 3);
+      return html`<i key=${i} style=${{ backgroundImage: 'url(' + IMG.impasto + ')', transform: 'scale(' + (c % 2 ? -1 : 1) + ',' + (r % 2 ? -1 : 1) + ')' }}></i>`;
+    });
+    return html`<section className="hero-wrap" aria-labelledby="hero-h">
+      <div className="paint" aria-hidden="true">${tiles}</div>
+      <div className="hero">
+        <div className="copy">
+          <p className="whisper">you are invited to</p>
+          <h1 id="hero-h" className="display-xl">A Sudani<br/>Thanksgiving<br/>’26</h1>
+          <p className="ar-hero" lang="ar" dir="rtl">عزومة عيد الشكر</p>
+          <dl className="facts"><div><dt>Date</dt><dd className="stamp-dish">${EVENT.date}</dd></div></dl>
+          <button type="button" className="btn" onClick=${p.onSave}>Save my seat</button>
+          ${EVENT.rsvpBy && html`<p className="ui deadline">RSVP by ${EVENT.rsvpBy}</p>`}
+          ${left > 0 && html`<p className=${'whisper ' + (EVENT.rsvpBy ? '' : 'deadline')}>${left} ${left === 1 ? 'day' : 'days'} until we gather</p>`}
+        </div>
+      </div>
+      <img className="corner" src=${IMG.camel} alt="" />
+      <div className="collage">
+        <img className="lay l-sw" src=${IMG.swirl} alt="" />
+        <img className="lay l-st" src=${IMG.dhow} alt="Sudanese dhow stamp" />
+        <img className="lay l-hb" src=${IMG.hibiscus} alt="Roselle plants in sand" />
+        <img className="lay l-ch" src=${IMG.cherries} alt="Cherries" />
+      </div>
+    </section>`;
+  }
+
+  function Ticket(p) {
+    var date = p.stamp ? new Date(p.stamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).toUpperCase() : '';
+    return html`<aside className=${'ticket' + (p.sent ? ' sent' : '')} aria-label="Your ticket">
+      <span className="no">No. ${pad(p.no)}</span>
+      <img className="strip" src=${IMG.camel} alt="" />
+      <div className="t-ar" lang="ar" dir="rtl">عزومة عيد الشكر</div>
+      <div className="t-title">A Sudani Thanksgiving ’26</div>
+      <dl>
+        <div><dt>Guest</dt><dd>${p.name || 'Your name'}</dd></div>
+        <div><dt>Party</dt><dd>${p.attending ? p.party + (p.party === 1 ? ' seat' : ' seats') : 'None'}</dd></div>
+        <div><dt>Bringing</dt><dd>${p.attending && p.dishes.length ? p.dishes.join(', ') : 'Nothing yet'}</dd></div>
+      </dl>
+      <div className="mark" aria-hidden="true"><span>RECEIVED</span><span>${date}</span></div>
+    </aside>`;
+  }
+
+  function WelcomePanel(p) {
+    var store = p.store, mine = p.mine;
+    var a = useState(''), name = a[0], setName = a[1];
+    var b = useState(true), attending = b[0], setAttending = b[1];
+    var c = useState(1), party = c[0], setParty = c[1];
+    var d = useState(''), notes = d[0], setNotes = d[1];
+    var e = useState(false), dirty = e[0], setDirty = e[1];
+    var f = useState('idle'), status = f[0], setStatus = f[1];
+    var g = useState({ kind: '', text: '' }), msg = g[0], setMsg = g[1];
+    var ph = useState(lsGet('tg_phone') || ''), phone = ph[0], setPhone = ph[1];
+
+    useEffect(function () {
+      if (mine && !dirty) { setName(mine.name || ''); setAttending(mine.attending !== false); setParty(1 + (mine.extra || 0)); setNotes(mine.notes || ''); }
+    }, [mine && mine.updatedAt, mine && mine.id]);
+
+    function touch(fn) { return function (v) { setDirty(true); setMsg({ kind: '', text: '' }); fn(v); }; }
+    var readOnly = store.mode === 'live' && !store.canWrite;
+    var nos = numbered(store.rsvps);
+    var nextNo = Math.max.apply(null, [0].concat(Object.keys(nos).map(function (k) { return nos[k]; }))) + 1;
+    var myDishes = store.dishes.filter(function (x) { return x.byId === store.myId; }).map(function (x) { return x.name; });
+
+    async function submit(ev) {
+      ev.preventDefault();
+      if (!name.trim()) { setMsg({ kind: 'err', text: '! Please add your name so we can save your seat.' }); var el = document.getElementById('rsvp-name'); if (el) el.focus(); return; }
+      var digits = phone.replace(/\D/g, '');
+      if (phone.trim() && (digits.length < 7 || digits.length > 15)) { setMsg({ kind: 'err', text: '! That phone number looks off. Leave it blank if you would rather not share it.' }); var pe = document.getElementById('rsvp-phone'); if (pe) pe.focus(); return; }
+      setStatus('saving'); setMsg({ kind: '', text: '' });
+      try {
+        await store.saveRsvp({ name: name, attending: attending, extra: party - 1, notes: notes, phone: phone.trim() });
+        if (phone.trim()) lsSet('tg_phone', phone.trim());
+        setStatus('idle'); setDirty(false);
+        setMsg({ kind: 'ok', text: attending ? '✓ Saved. See you at the table, ' + name.trim() + '.' : '✓ Saved. We will miss you, ' + name.trim() + '.' });
+      } catch (x) {
+        setStatus('idle'); setMsg({ kind: 'err', text: '! That did not save. Please check your connection and try again.' });
+      }
+    }
+    function jump() {
+      var el = document.getElementById('rsvp'); if (!el) return;
+      el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(function () { var i = document.getElementById('rsvp-name'); if (i) i.focus({ preventScroll: true }); }, reduced() ? 0 : 500);
+    }
+
+    return html`<div>
+      <${Hero} onSave=${jump} />
+
+      <section className="gut details" aria-label="Details">
+        <div className="det">
+          <div>
+            <dl className="facts">
+              <div><dt>Date</dt><dd className="stamp-md">${EVENT.date}</dd></div>
+              <div><dt>Party starts</dt><dd className="stamp-md">${EVENT.time}</dd></div>
+              <div><dt>Food</dt><dd className="stamp-md">${EVENT.food}</dd></div>
+              <div><dt>Place</dt><dd className="stamp-md">${EVENT.placeLines.map(function (l, i) { return html`<span key=${i} style=${{ display: 'block' }}>${l}</span>`; })}</dd></div>
+            </dl>
+            <p className="arrive">Please arrive by 3:00 so you can use the photo station and join the family games. Food starts at 4:00.</p>
+          </div>
+          <img className="camel" src=${IMG.camel} alt="Camel caravan stamp" />
+        </div>
+      </section>
+
+      <section id="rsvp" className="gut rsvp" aria-labelledby="rsvp-h">
+        <form className="form" onSubmit=${submit} noValidate>
+          <div>
+            <p className="ar-title" lang="ar" dir="rtl">تفضلوا</p>
+            <h2 id="rsvp-h" className="display-lg">Save My Seat</h2>
+            <p className="body-sm muted">Tell us who is coming. You can return any time to update your reply.</p>
+          </div>
+          <${StoreNotes} store=${store} />
+          <div className="field">
+            <label className="label" htmlFor="rsvp-name">Name or Family Name</label>
+            <input id="rsvp-name" className="input" type="text" autoComplete="name" placeholder="Your name or your family's name" value=${name} disabled=${readOnly} aria-describedby="rsvp-msg" aria-invalid=${msg.kind === 'err' && !name.trim() ? 'true' : 'false'} onChange=${function (ev) { touch(setName)(ev.target.value); }} />
+          </div>
+          <div className="field">
+            <label className="label" htmlFor="rsvp-phone">Phone number (optional)</label>
+            <input id="rsvp-phone" className="input" type="tel" inputMode="tel" autoComplete="tel" placeholder="For the shared photo album" value=${phone} disabled=${readOnly} aria-describedby="phone-hint" onChange=${function (ev) { touch(setPhone)(ev.target.value); }} />
+            <p id="phone-hint" className="body-sm muted">There is a photo station at the party, and we will share the album afterward. Only the hosts can see your number. It is never shown on this page.</p>
+          </div>
+          <div className="field">
+            <span className="label" id="att-label">Will you join us?</span>
+            <div className="row" role="radiogroup" aria-labelledby="att-label">
+              <label className="opt"><input type="radio" name="att" value="yes" checked=${attending} disabled=${readOnly} onChange=${function () { touch(setAttending)(true); }} /><span className="chip">Yes, I will be there</span></label>
+              <label className="opt"><input type="radio" name="att" value="no" checked=${!attending} disabled=${readOnly} onChange=${function () { touch(setAttending)(false); }} /><span className="chip">Can't make it</span></label>
+            </div>
+          </div>
+          ${attending && html`<div className="field">
+            <span className="label" id="party-label">Guests, including you</span>
+            <div className="step" role="group" aria-labelledby="party-label">
+              <button type="button" aria-label="Fewer guests" disabled=${readOnly || party <= 1} onClick=${function () { touch(setParty)(Math.max(1, party - 1)); }}>−</button>
+              <output aria-live="polite">${party}</output>
+              <button type="button" aria-label="More guests" disabled=${readOnly || party >= 12} onClick=${function () { touch(setParty)(Math.min(12, party + 1)); }}>+</button>
+            </div>
+          </div>`}
+          <div className="field">
+            <label className="label" htmlFor="rsvp-notes">Dietary restrictions and notes</label>
+            <textarea id="rsvp-notes" className="input" placeholder="Allergies, vegetarians, high chairs needed" value=${notes} disabled=${readOnly} onChange=${function (ev) { touch(setNotes)(ev.target.value); }}></textarea>
+          </div>
+          <div>
+            <button className="btn" type="submit" disabled=${status === 'saving' || readOnly}>${status === 'saving' ? 'Saving' : mine ? 'Update my RSVP' : 'Save my seat'}</button>
+            <p id="rsvp-msg" className=${'msg ' + msg.kind} role="status" aria-live="polite">${msg.text}</p>
+            ${msg.kind === 'ok' && html`<div className="after">
+              ${attending && html`<button type="button" className="linkbtn" onClick=${function () { p.go('table'); }}>Choose what to bring</button>`}
+              <button type="button" className="linkbtn quiet" onClick=${function () { p.go('guests'); }}>See who is coming</button>
+            </div>`}
+          </div>
+        </form>
+        <${Ticket} sent=${!!mine && !dirty} stamp=${mine && mine.updatedAt} no=${mine ? nos[mine.id] : nextNo} name=${name.trim()} attending=${attending} party=${party} dishes=${myDishes} />
+      </section>
+
+      <section className="gut playlist" aria-labelledby="pl-h">
+        <img className="swirl" src=${IMG.swirl} alt="" />
+        <div className="pl-copy">
+          <p className="whisper">good food deserves good music</p>
+          <h2 id="pl-h" className="display-lg">The Thanksgiving Playlist</h2>
+          <p className="lead">Help us build the soundtrack for the day. Open the playlist in Spotify and add a song or two that belongs on our table.</p>
+          <a className="btn-2" href=${PLAYLIST_URL} target="_blank" rel="noopener noreferrer">Open the playlist on Spotify</a>
+          <p className="body-sm muted">Opens in a new tab.</p>
+        </div>
+      </section>
+    </div>`;
+  }
+
+  /* ---------- 2. The Thanksgiving Table ---------- */
+  function TablePanel(p) {
+    var store = p.store, staples = p.staples;
+    var a = useState(null), typedAs = a[0], setTypedAs = a[1];
+    var as = typedAs !== null ? typedAs : (p.mine && p.mine.name) || '';
+    var b = useState({}), drafts = b[0], setDrafts = b[1];
+    var c = useState({}), warns = c[0], setWarns = c[1];
+    var d = useState({}), msgs = d[0], setMsgs = d[1];
+    var e = useState(null), busy = e[0], setBusy = e[1];
+
+    var dishes = useMemo(function () { return store.dishes.slice().sort(function (x, y) { return (x.createdAt || 0) - (y.createdAt || 0); }); }, [store.dishes]);
+    var open = staples.filter(function (s) { return s.claims.length === 0; }).length;
+    var readOnly = store.mode === 'live' && !store.canWrite;
+
+    function setMsg(cat, text) { setMsgs(function (m) { var o = Object.assign({}, m); o[cat] = text; return o; }); }
+    function setWarn(cat, v) { setWarns(function (m) { var o = Object.assign({}, m); o[cat] = v; return o; }); }
+    function setDraft(cat, v) { setDrafts(function (m) { var o = Object.assign({}, m); o[cat] = v; return o; }); setWarn(cat, null); setMsg(cat, ''); }
+
+    function claimStaple(s) {
+      setDraft(s.cat, s.fill);
+      setTimeout(function () {
+        var el = document.getElementById('add-' + s.cat);
+        if (el) { el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'center' }); el.focus({ preventScroll: true }); }
+      }, 30);
+    }
+    async function add(cat, force) {
+      var name = (drafts[cat] || '').trim();
+      if (!name) return;
+      if (!as.trim()) { setMsg(cat, '! Add your name above so everyone knows who is bringing it.'); var el = document.getElementById('signing-as'); if (el) el.focus(); return; }
+      var staple = STAPLES.find(function (s) { return s.re.test(name); }) || null;
+      if (!force) {
+        var sim = findSimilar(name, staple, dishes);
+        if (sim) { setWarn(cat, sim); return; }
+      }
+      setBusy(cat);
+      try {
+        await store.addDish({ name: name, category: cat, by: as.trim(), staple: staple ? staple.id : null });
+        setDrafts(function (m) { var o = Object.assign({}, m); o[cat] = ''; return o; }); setWarn(cat, null); setMsg(cat, '');
+      } catch (x) { setMsg(cat, '! That did not save. Please check your connection and try again.'); }
+      setBusy(null);
+    }
+
+    return html`<div className="gut pad">
+      <header className="tb-head">
+        <div>
+          <h2 className="display-lg">The Thanksgiving Table</h2>
+          <p className="ar-title" lang="ar" dir="rtl">يلا الغداء</p>
+          <p className="lead muted">Everything below updates as family signs up. Look first, then claim something that is missing.</p>
+        </div>
+        <img className="camel" src=${IMG.swirl} alt="" />
+      </header>
+
+      <div className="stack" style=${{ marginTop: '32px' }}>
+        <${StoreNotes} store=${store} />
+        <div className="field">
+          <label className="label" htmlFor="signing-as">Signing up as</label>
+          <input id="signing-as" className="input" type="text" autoComplete="name" placeholder="Your name" value=${as} disabled=${readOnly} onChange=${function (ev) { setTypedAs(ev.target.value); }} />
+        </div>
+      </div>
+
+      <section aria-labelledby="missing-h" style=${{ marginTop: '72px' }}>
+        <div className="sec-head">
+          <h3 id="missing-h" className="display-md">The Missing Masterpieces</h3>
+          <span className=${'pill' + (open === 0 ? ' done' : '')}>${open === 0 ? '✓ Every must-have is covered' : open + ' of ' + STAPLES.length + ' still needed'}</span>
+        </div>
+        <p className="body-sm muted" style=${{ marginTop: '8px' }}>The must-have dishes. Open cards are waiting for someone.</p>
+        <div className="staples">
+          ${staples.map(function (s) {
+            var claimed = s.claims.length > 0;
+            return html`<div key=${s.id} className=${'staple' + (claimed ? ' claimed' : '')}>
+              <div className="st-title">${s.title}</div>
+              <div className="label">${s.kicker}</div>
+              ${claimed
+                ? html`<p className="body-sm ok"><span aria-hidden="true">✓ </span>Claimed by ${s.claims[0].by}${s.claims.length > 1 ? ' and ' + (s.claims.length - 1) + ' more' : ''}</p>`
+                : html`<div className="st-foot"><span className="label warm">Still needed</span><button type="button" className="btn-2" disabled=${readOnly} onClick=${function () { claimStaple(s); }}>I'll bring it</button></div>`}
+            </div>`;
+          })}
+        </div>
+      </section>
+
+      <div className="menu">
+        ${CATS.map(function (cat) {
+          var items = dishes.filter(function (x) { return x.category === cat.id; });
+          var warn = warns[cat.id];
+          return html`<section key=${cat.id} aria-labelledby=${'h-' + cat.id}>
+            <div className="course-head">
+              <div>
+                <h3 id=${'h-' + cat.id} className="display-md">${cat.title}</h3>
+                <p className="body-sm muted">${cat.note}</p>
+                <p className="label">${items.length} ${items.length === 1 ? 'dish' : 'dishes'}</p>
+              </div>
+              <img className="tile" src=${IMG[cat.tile]} style=${{ '--r': cat.r + 'deg' }} alt="" />
+            </div>
+            <div className="dishes">
+              ${items.length === 0 && html`<div className="empty"><p className="whisper">nothing here yet, be the first to set something down</p></div>`}
+              ${items.map(function (x) {
+                var canRemove = store.mode !== 'loading' && !readOnly && (x.byId === store.myId || store.admin);
+                return html`<div key=${x.id} className="dish">
+                  <div style=${{ minWidth: 0 }}>
+                    <div className="stamp-dish">${x.name}</div>
+                    <div className="by"><span className="label">By ${x.by}</span>${x.staple && STAPLE_BY_ID[x.staple] && html`<span className="tag">${STAPLE_BY_ID[x.staple].title}</span>`}</div>
+                  </div>
+                  ${canRemove && html`<button type="button" className="linkbtn quiet" aria-label=${'Remove ' + x.name} onClick=${function () { store.removeDish(x.id).catch(function () {}); }}>Remove</button>`}
+                </div>`;
+              })}
+            </div>
+            <form className="add" onSubmit=${function (ev) { ev.preventDefault(); add(cat.id, false); }}>
+              <input id=${'add-' + cat.id} className="input" type="text" aria-label=${'Add a dish to ' + cat.title} placeholder="Add a dish" value=${drafts[cat.id] || ''} disabled=${readOnly} onChange=${function (ev) { setDraft(cat.id, ev.target.value); }} />
+              <button type="submit" className="btn-2" disabled=${busy === cat.id || readOnly || !(drafts[cat.id] || '').trim()}>Claim</button>
+            </form>
+            <p className="body-sm err" role="status" aria-live="polite" style=${{ marginTop: msgs[cat.id] ? '12px' : 0 }}>${msgs[cat.id]}</p>
+            ${warn && html`<div style=${{ marginTop: '12px' }}><${Note} label="Heads up">
+              <p className="body-sm">${warn.staple ? warn.dish.by + ' already claimed ' + warn.staple.title + ': ' : warn.dish.by + ' is already bringing '}<strong>${warn.dish.name}</strong>${warn.staple ? '.' : ', which looks similar.'}</p>
+              <div className="row">
+                <button type="button" className="linkbtn" onClick=${function () { add(cat.id, true); }}>Add mine anyway</button>
+                <button type="button" className="linkbtn quiet" onClick=${function () { setWarn(cat.id, null); }}>Pick something else</button>
+              </div>
+            <//></div>`}
+          </section>`;
+        })}
+      </div>
+    </div>`;
+  }
+
+  /* ---------- 3. Guest List Summary ---------- */
+  function Kpi(q) {
+    return html`<div className="kpi"><div className="label">${q.label}</div><div className="stamp-xl">${q.value}</div><div className="body-sm muted">${q.note}</div></div>`;
+  }
+  function GuestsPanel(p) {
+    var store = p.store, staples = p.staples;
+    var rsvps = store.rsvps, dishes = store.dishes.slice().sort(function (x, y) { return (x.createdAt || 0) - (y.createdAt || 0); });
+    var guests = rsvps.reduce(function (n, r) { return n + (r.attending ? 1 + (r.extra || 0) : 0); }, 0);
+    var covered = staples.filter(function (s) { return s.claims.length > 0; }).length;
+
+    var rows = rsvps.slice().sort(function (x, y) { return (y.attending ? 1 : 0) - (x.attending ? 1 : 0) || (x.name || '').localeCompare(y.name || ''); }).map(function (r) {
+      return { key: r.id, name: r.name, attending: !!r.attending, party: 1 + (r.extra || 0), notes: r.notes, dishes: dishes.filter(function (x) { return x.byId === r.id; }), pending: false };
+    });
+    var ids = {}; rsvps.forEach(function (r) { ids[r.id] = true; });
+    var orphans = {};
+    dishes.forEach(function (x) { if (!ids[x.byId]) { var k = x.byId || x.by; (orphans[k] = orphans[k] || { key: 'o-' + k, name: x.by, attending: true, party: 0, notes: '', dishes: [], pending: true }).dishes.push(x); } });
+    Object.keys(orphans).forEach(function (k) { rows.push(orphans[k]); });
+
+    return html`<div className="gut pad">
+      <header>
+        <h2 className="display-lg">Guest List Summary</h2>
+        <p className="ar-title" lang="ar" dir="rtl">عزومة عيد الشكر</p>      </header>
+      <div className="stack" style=${{ marginTop: '24px' }}><${StoreNotes} store=${store} /></div>
+
+      <div className="kpis">
+        <${Kpi} label="Confirmed guests" value=${guests} note="Everyone who said yes, family included" />
+        <${Kpi} label="Dishes promised" value=${dishes.length} note="Across all four courses" />
+        <${Kpi} label="Must-haves covered" value=${covered} note=${'of ' + STAPLES.length + ' must-have dishes'} />
+      </div>
+
+      <section aria-labelledby="ledger-h" style=${{ marginTop: '72px' }}>
+        <h3 id="ledger-h" className="display-md">The Master Ledger</h3>
+        <div className="ledger">
+          <div className="l-head label"><div>Guest name</div><div>Total family members</div><div>Promised dishes</div><div>Dietary notes</div></div>
+          ${rows.length === 0 && html`<div className="l-empty"><p className="muted">No replies yet. The first RSVP will appear here.</p><button type="button" className="btn-2" onClick=${function () { p.go('welcome'); }}>Add the first RSVP</button></div>`}
+          ${rows.map(function (r) {
+            return html`<div key=${r.key} className=${'l-row' + (r.attending ? '' : ' regrets')}>
+              <div><div className="stamp-dish">${r.name}</div>${!r.attending && html`<div className="label" style=${{ marginTop: '4px' }}>Can't make it</div>`}</div>
+              <div><span className="label cell">Total family members</span>${r.pending ? html`<span className="muted">RSVP pending</span>` : r.attending ? html`<span className="num-warm">${r.party}</span>` : html`<span className="muted">None</span>`}</div>
+              <div><span className="label cell">Promised dishes</span>${r.dishes.length ? r.dishes.map(function (x) { return html`<div key=${x.id}>${x.name}</div>`; }) : html`<span className="muted">Not yet</span>`}</div>
+              <div><span className="label cell">Dietary notes</span>${r.notes ? html`<span className="body-sm">${r.notes}</span>` : html`<span className="muted body-sm">None noted</span>`}</div>
+            </div>`;
+          })}
+        </div>
+      </section>
+    </div>`;
+  }
+
+  /* ---------- app shell ---------- */
+  var TABS = [
+    { id: 'welcome', long: 'Welcome & RSVP', short: 'RSVP' },
+    { id: 'table', long: 'The Thanksgiving Table', short: 'The Table' },
+    { id: 'guests', long: 'Guest List Summary', short: 'Guests' }
+  ];
+  function readHash() {
+    var h = ''; try { h = (location.hash || '').replace('#', ''); } catch (e) {}
+    return TABS.some(function (t) { return t.id === h; }) ? h : 'welcome';
+  }
+  function App() {
+    var store = useStore();
+    var t = useState(readHash()), tab = t[0], setTab = t[1];
+    useEffect(function () {
+      function f() { setTab(readHash()); }
+      window.addEventListener('hashchange', f);
+      return function () { window.removeEventListener('hashchange', f); };
+    }, []);
+    function go(id) {
+      setTab(id);
+      try { location.hash = id; } catch (e) {}
+      try { window.scrollTo({ top: 0 }); } catch (e) {}
+    }
+    var mine = store.rsvps.find(function (r) { return r.id === store.myId; });
+    var staples = useMemo(function () {
+      return STAPLES.map(function (s) { return Object.assign({}, s, { claims: store.dishes.filter(function (x) { return x.staple === s.id; }) }); });
+    }, [store.dishes]);
+
+    return html`<div>
+      <nav className="nav" aria-label="Sections">
+        <div className="nav-in gut">
+          <span className="whisper">a table big enough for everyone</span>
+          <div className="tabs" role="tablist">
+            ${TABS.map(function (x) {
+              return html`<button key=${x.id} type="button" role="tab" id=${'tab-' + x.id} aria-selected=${tab === x.id} aria-controls="panel" className="tab" onClick=${function () { go(x.id); }}><span className="l">${x.long}</span><span className="s">${x.short}</span></button>`;
+            })}
+          </div>
+        </div>
+      </nav>
+      <main className="page" id="panel" role="tabpanel" aria-labelledby=${'tab-' + tab} key=${tab}>
+        ${tab === 'welcome' && html`<${WelcomePanel} store=${store} mine=${mine} go=${go} />`}
+        ${tab === 'table' && html`<${TablePanel} store=${store} mine=${mine} staples=${staples} />`}
+        ${tab === 'guests' && html`<${GuestsPanel} store=${store} staples=${staples} go=${go} />`}
+        <footer className="gut foot"><p className="whisper">see you at the table</p></footer>
+      </main>
+    </div>`;
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(html`<${App} />`);
+})();
+</script>
+
+</body>
+</html>
